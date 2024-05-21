@@ -1,8 +1,143 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<div id="topo" class="d-flex justify-content-center" style="padding: 25px">
+    <!-- Imagem da carta -->
+    <div class="card position-static" style="border-radius: 25px; margin-right: 175px">
+        <img class="card-img" style="width: 350px; border-radius: 15px" src="Assets/card.jpg"/>
+    </div>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <!-- Explicação que fica ao lado da carta -->
+    <div class="card position-absolute justify-content-center" style="border-top-width: 3px; border-bottom-width: 3px; border-bottom-color: black; border-top-color: black; width: 350px; height: 500px; margin: 40px">
+        <ul class="list-group" style="font-size: 14px">
+            
+            <!-- Título -->
+            <li class="list-group-item" style="margin-bottom: 0; border-top-width: 0">
+                <p style="font-size: 16px; margin-bottom: 0"> Herigast, Erupting Nullkite 9</p>
+            </li>
+
+            <!-- Subtítulo -->
+            <li class="list-group-item" style="margin-bottom: 0">Legendary Creature — Eldrazi Dragon</li>
+
+            <!-- Explicações -->
+            <li class="list-group-item" style="margin-bottom: 0">
+                <p style="margin-bottom: 0">Emerge 6 (You may cast this spell by sacrificing a creature and paying the emerge cost reduced by that creature’s mana value.)</p>
+                <p style="margin-bottom: 0">When you cast this spell, you may exile your hand. If you do, draw three cards.</p>
+                <p style="margin-bottom: 0">Flying</p>
+                <p style="margin-bottom: 0">Each creature spell you cast has emerge. The emerge cost is equal to its mana cost.</p>
+            </li>
+
+            <!-- Infos aleatórias -->
+            <li class="list-group-item" style="margin-bottom: 0">6/6</li>
+            <li class="list-group-item" style="margin-bottom: 0; font-size: 12px">Illustrated by Lucas Graciano</li>
+            <li class="list-group-item" style="margin-bottom: 0;  border-bottom-width: 0">
+                <p class="btn btn-secondary" style="width: 100px; font-size: 12px; padding: 0">UNRELEASED</p>
+                <p style="margin-bottom: 0; font-size: 11px;">This card will be released on 2024-06-07, it is not legal in any format until its release date approaches.</p>
+            </li>
+        </ul>
+    </div>
+    
+    
+    <div style="border-top-width: 5px; border-bottom-width: 5px; width: 350px; margin-left: 200px">
+        <!-- Primeiro box preto -->
+        <div style="background-color: #343241" class="d-flex p-2 gap-2">
+            <div class="text-white">
+                <p class="m-0">Modern Horizons 3 (MH3)</p>
+                <p class="m-0">#8 · Mythic Rare · English · Nonfoil/Foil</p>
+            </div>
+        </div>
+
+        <!-- Caixinha roxa -->
+        <div>
+            <button class="btn text-white" style="background-color: #624395;font-size: 12px;padding: 0; width: 25px; height: 25px">EN</button>
+        </div>
+
+        <!-- Tabela com valores -->
+        <table class="d-flex flex-column">
+            
+            <!-- 1 -->
+            <thead style="background-color: #343241">
+            <tr class="text-white justify-content-between d-flex">
+                <th class="ms-2" style="width: 200px">
+                    <p class="mb-0">Prints</p>
+                </th>
+                <th>
+                    <p class="font-weight-light mb-0">USD</p>
+                </th>
+                <th>
+                    <p class="font-weight-light mb-0">EUR</p>
+                </th>
+                <th>
+                    <p class="font-weight-light mb-0 me-2">TIX</p>
+                </th>
+            </tr>
+            </thead>
+
+            <!-- 2 -->
+            <tbody style="font-size: 12px; border-bottom-width: 3px; border-bottom-color: #343241;" class="card">
+            <tr class="d-flex justify-content-between list-group-item">
+                <td>
+                    <div style="width: 200px">
+                        <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" class="rarity-mythic">
+                            <path d="M12 4.435c0 .106-.063.221-.188.346l-2.618 2.553.62 3.606.007.144c0 .101-.025.186-.076.256-.05.07-.124.105-.22.105-.091 0-.188-.029-.288-.087l-3.238-1.702-3.238 1.702c-.106.058-.202.087-.288.087-.101 0-.177-.035-.227-.105-.05-.07-.076-.155-.076-.256l.014-.144.62-3.606-2.625-2.553c-.12-.13-.18-.245-.18-.346 0-.178.135-.288.404-.332l3.62-.526 1.623-3.281c.091-.197.209-.296.353-.296s.262.099.353.296l1.623 3.281 3.62.526c.269.043.404.154.404.332z" fill="red"></path>
+                        </svg>
+                        <p>Modern Horizons 3 #8</p>
+                    </div>
+                </td>
+                <td>
+                    <a title="Nonfoil: $49.75" class="currency-usd" href="https://tcgplayer.pxf.io/c/4931599/1830156/21018?subId1=card-detail-prints&amp;u=https%3A%2F%2Fwww.tcgplayer.com%2Fproduct%2F548584%3Fpage%3D1">$49.75</a>
+                </td>
+                <td>
+                    <a class="currency-eur" rel="nofollow" href="https://www.cardmarket.com/en/Magic/Products/Singles/Modern-Horizons-3/Herigast-Erupting-Nullkite?referrer=scryfall&amp;utm_campaign=card_prices&amp;utm_medium=text&amp;utm_source=scryfall">€29.79</a>
+                </td>
+                <td>
+                    <a tabindex="-1" aria-hidden="true" href="/card/mh3/8/herigast-erupting-nullkite"></a>
+                </td>
+            </tr>
+
+            <!-- 3 -->
+            <tr class="d-flex justify-content-between list-group-item">
+                <td>
+                    <div style="width: 200px">
+                        <p>Modern Horizons 3 #362</p>
+                    </div>
+                </td>
+                <td>
+                    <a tabindex="-1" aria-hidden="true" href="/card/mh3/362/herigast-erupting-nullkite"></a>
+                </td>
+                <td>
+                    <a tabindex="-1" aria-hidden="true" href="/card/mh3/362/herigast-erupting-nullkite"></a>
+                </td>
+                <td>
+                    <a tabindex="-1" aria-hidden="true" href="/card/mh3/362/herigast-erupting-nullkite"></a>
+                </td>
+            </tr>
+
+            <!-- 4 -->
+            <tr class="d-flex justify-content-between list-group-item">
+                <td>
+                    <div style="width: 200px">
+                        <p>Modern Horizons 3 #474</p>
+                    </div>
+                </td>
+                <td>
+                    <a title="Price: $79.99" class="currency-usd">$79.99</a>
+                </td>
+                <td>
+                    <a tabindex="-1" aria-hidden="true"></a>
+                </td>
+                <td>
+                    <a tabindex="-1" aria-hidden="true"></a>
+                </td>
+            </tr>
+
+            <!-- 5 -->
+            <tr class="ms-4">
+                <td colspan="4">
+                    <p class="mb-0">View all prints →</p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
